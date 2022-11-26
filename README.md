@@ -1,4 +1,8 @@
 # mark_class_work
+while_pin.py with 3 attempts </br>
+![image](https://user-images.githubusercontent.com/63554654/204074519-c42faae5-e84e-4824-891e-7682ae107c15.png) </br>
+
+
 screen for 1d_robot_coordinate game: </br>
 all conditions added: </br>
 
