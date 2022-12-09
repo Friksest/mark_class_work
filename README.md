@@ -1,7 +1,7 @@
 # mark_class_work
 
 Results for 4 tasks: </br>
-1) Change left half with a value given from a kb</br>
+1)Change left half with a value given from a kb</br>
 2)swap pair 2,3 and with 4,5</br>
 3)screed added / Swap left and right halfs of the list respecting the order </br>
 4)Calculate the sum and put it at the begining </br>
