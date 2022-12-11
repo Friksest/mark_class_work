@@ -1,5 +1,11 @@
 # mark_class_work
 
+Restaurant_multiple_list </br>
+HW1: add conditional logic if client didn't order </br>
+HW2. enter data for sit 1,2 from KB </br>     
+![image](https://user-images.githubusercontent.com/63554654/206893057-93974ad5-5769-4dd8-8ecc-f1dc0634b145.png)</br>
+
+
 Results for 4 tasks: </br>
 1)Change left half with a value given from a kb</br>
 2)swap pair 2,3 and with 4,5</br>
