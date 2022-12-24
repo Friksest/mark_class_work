@@ -23,6 +23,8 @@ gm = [
 ]
 ##########################################
 gm[ry][rx] = 1    # initial robot coord setup 
+move_button = ['d',  'a', 's',  'w']
+button_code = [  1,   -1,   1,   -1]
 
 while True:
     #################### DRAW THE MAP #########
@@ -42,42 +44,54 @@ while True:
     option = input(">>> ")
     # HW2:  optimuze movement
     # HW3*: check for bomb / hp 
-    if option == 'd':
-        gm[ry][rx] = 0 # delete the robot
-        rx += 1
+    if option in move_button:
+        m = move_button.index(option)
+        gm[ry][rx] = 0
+        if m in range(0,2):
+            rx += button_code[m]
+        elif m in range(2,4):
+            ry += button_code[m]
         if gm[ry][rx] == 2:
-            print("You burned! Game over")
+            print("You blowed! Game over")
             break
         else:
             gm[ry][rx] = 1
-        
-    if option == 'a':
-        gm[ry][rx] = 0 # delete the robot
-        rx -= 1
-        if gm[ry][rx] == 2:
-            print("You burned! Game over")
-            break
-        else:
-            gm[ry][rx] = 1
-
-    if option == 's':
-        gm[ry][rx] = 0 # delete the robot
-        ry += 1
-        if gm[ry][rx] == 2:
-            print("You burned! Game over")
-            break
-        else:
-            gm[ry][rx] = 1
-
-    if option == 'w':
-        gm[ry][rx] = 0 # delete the robot
-        ry -= 1
-        if gm[ry][rx] == 2:
-            print("You burned! Game over")
-            break
-        else:
-            gm[ry][rx] = 1
-
+    #if option == 'd':
+    #    gm[ry][rx] = 0 # delete the robot
+    #    rx += 1
+    #    if gm[ry][rx] == 2:
+    #        print("You blowed! Game over")
+    #        break
+    #    else:
+    #        gm[ry][rx] = 1
+    #    
+    #if option == 'a':
+    #    gm[ry][rx] = 0 # delete the robot
+    #    rx -= 1
+    #    if gm[ry][rx] == 2:
+    #        print("You blowed! Game over")
+    #        break
+    #    else:
+    #        gm[ry][rx] = 1
+#
+    #if option == 's':
+    #    gm[ry][rx] = 0 # delete the robot
+    #    ry += 1
+    #    if gm[ry][rx] == 2:
+    #        print("You blowed! Game over")
+    #        break
+    #    else:
+    #        gm[ry][rx] = 1
+#
+    #if option == 'w':
+    #    gm[ry][rx] = 0 # delete the robot
+    #    ry += -1
+    #    if gm[ry][rx] == 2:
+    #        print("You blowed! Game over")
+    #        break
+    #    else:
+    #        gm[ry][rx] = 1
+#
 # HW1:  add move left / up 
 
 
